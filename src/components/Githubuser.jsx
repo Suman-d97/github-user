@@ -3,6 +3,7 @@ import {
   Alert,
   Avatar,
   Button,
+  Card,
   CircularProgress,
   Paper,
   Stack,
@@ -110,6 +111,7 @@ const Githubuser = () => {
                     }}
                   >
                     <GitHub fontSize="large" />
+                    <Card sx={{width : '850px', borderRadius : 2, boxShadow: 3}}>
                     <Avatar
                       alt="avatar"
                       src={data.avatar_url}
@@ -125,7 +127,7 @@ const Githubuser = () => {
                     <Typography>
                       <strong>Public Repos</strong> : {data.public_repos}
                     </Typography>
-
+                    </Card>
                     {Array.isArray(repoUrl) &&
                       repoUrl.map((value) => {
                         return (
