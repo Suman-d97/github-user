@@ -1,13 +1,15 @@
 
 import './App.css'
-import Github from './components/Github'
+
+import Githubuser from './components/Githubuser'
 
 function App() {
  
 
   return (
     <>
- <Github/>
+ 
+ <Githubuser/>
     </>
   )
 }
